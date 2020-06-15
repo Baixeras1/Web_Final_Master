@@ -139,7 +139,7 @@ nav :last-child {
     top: 250px;
 }
 section {
-    margin-top: 280px;
+    margin-top: 180px;
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -159,7 +159,6 @@ section p:last-child {
 }
 .instalaciones {
     flex-direction: row-reverse;
-    margin-bottom: 280px;
 }
 .instalaciones div:last-child {
     margin-right: 148px;
@@ -167,12 +166,10 @@ section p:last-child {
 .instalaciones img {
     flex-direction: row-reverse;
 }
-.dieta {
-    margin-top: 0;
-}
 footer {
     background-color: var(--color-primary);
     padding: 50px 0;
+    margin-top: 180px;
 }
 footer a {
     font-family: secondary-texto-black;
@@ -183,18 +180,10 @@ footer a {
     display: flex;
     justify-content: space-around;
 }
-.pie :first-child::before {
-    content: url(../icons/Instagram.svg);
-    width: 5px;
+.instagram div, .mapa div, .email div{
+    width: 100%;
+    max-width: 45px;
+    margin: 0 auto;
     filter: invert(100%);
-    position: relative;
-    top: 0;
-    left: 0;
-}
-.pie :nth-child(2) {
-    text-align: center;
-}
-.copy {
-    display: block;
-    text-align: center;
+    margin-bottom: 10px;
 }
