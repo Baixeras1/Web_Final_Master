@@ -8,66 +8,81 @@ button{cursor: pointer;}
     --color-white: #fff;
 
 }
+
 @font-face {
     font-family: titles;
     src: url(../fonts/Impact.ttf);
 }
+
 @font-face {
     font-family: subtitles;
     src: url(../fonts/Impact.ttf);
 }
+
 @font-face {
     font-family: cabecera;
     src: url(../fonts/Optima.ttc);
 }
+
 @font-face {
     font-family: texto;
     src: url(../fonts/Verdana.ttf);
 }
+
 @font-face {
     font-family: secondary-texto;
     src: url(../fonts/Arial.ttf);
 }
+
 @font-face {
     font-family: secondary-texto-black;
     src: url(../fonts/Arial\ Bold.ttf);
 }
+
 html {
     font-size: 16px;
 }
+
 body {
     font-family: texto;
 }
+
 header {
     display: flex;
     justify-content: flex-end;        
 }
+
 h1 {
     font-family: subtitles;
     font-size: 6.25em;
     color: var(--color-white);
     text-align: center;
 }
+
 h2 {
     font-family: titles;
     font-size: 2.1875em ;
 }
+
 p {
     font-family: texto;
     font-size: 1em;
     text-align: justify;
     margin-top: 60px;
 }
+
 .logo {
     width: 8%;
     position: absolute;
     top: 20px;
     left: 140px;
 }
+
 .navegador {
     width: 40%;
     margin-top: 40px;
 }
+
 nav {
     background-color: var(--color-primary);
     padding: 20px 0;
@@ -75,17 +90,21 @@ nav {
     border-bottom-left-radius: 40px;
     margin-bottom: 20px;
 }
+
 nav a {
     color: var(--color-white);
     font-family: titles;
     padding: 20px;
 }
+
 nav :first-child {
     padding-left: 40px;
 }
+
 nav :last-child {
     color: var(--color-secondary);
 }
+
 .horario {
     width: 88%;
     background-color: var(--color-primary);
@@ -96,15 +115,18 @@ nav :last-child {
     top: 0;
     left: 90px;
 }
+
 .horario a {
     color: var(--color-white);
     font-family: titles;
     padding-left: 70px;
 
 }
+
 .horario :first-child {
     padding-left: 40px;
 }
+
 .horario :first-child::before {
     content: url(../icons/Reloj.svg);
     filter: invert(100%);
@@ -115,6 +137,7 @@ nav :last-child {
     left: 13px;
     padding-left: 20px;
 }
+
 .horario :last-child::before {
     content: url(../icons/Whatsapp-sinfondo.svg);
     filter: invert(100%);
@@ -125,61 +148,77 @@ nav :last-child {
     left: 346px;
     padding-left: 20px;
 }
+
 .banner {
-    background-image: url(../img/chica-principal.png);
+    width: 100%;
+    max-width: 100%;
     height: 915px;
     position: relative;
     top: -35px;
     left: 0;
     z-index: -1;
 }
+
 .banner h1 {
-    margin: 0 auto;
-    position: relative;
-    top: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 section {
     margin-top: 180px;
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
 }
+
 section h2 {
     margin-top: 140px;
 }
+
 section div:first-child {
     width: 40%;
 }
+
 section div:last-child {
     width: 40%;
     margin-left: 148px;
 }
+
 section p:last-child {
     margin-top: 20px;
 }
+
 .instalaciones {
     flex-direction: row-reverse;
 }
+
 .instalaciones div:last-child {
     margin-right: 148px;
 }
+
 .instalaciones img {
     flex-direction: row-reverse;
 }
+
 footer {
     background-color: var(--color-primary);
     padding: 50px 0;
     margin-top: 180px;
 }
+
 footer a {
     font-family: secondary-texto-black;
     font-size: 1em;
     color: var(--color-white);
 }
+
 .pie {
     display: flex;
     justify-content: space-around;
 }
+
 .instagram div, .mapa div, .email div{
     width: 100%;
     max-width: 45px;
@@ -187,24 +226,28 @@ footer a {
     filter: invert(100%);
     margin-bottom: 10px;
 }
+
 main {
     margin-top: 140px;
 }
+
 .menu {
     width: 100%;
-    height: 90px;
+    height: 60px;
     background-color: var(--color-secondary);
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
 }
+
 .menu a {
     color: var(--color-primary);
     font-family: titles;
-    font-size: 35px;
+    font-size: 1.87em;
     text-transform: uppercase;
 }
+
 .cuerpo {
     display: flex;
     flex-wrap: wrap;
@@ -214,10 +257,34 @@ main {
     margin-right: 200px;
     margin-top: 180px;
 }
+
 .blog {
     width: 350px;
     text-align: center;
     font-family: secondary-texto-black;
     color: var(--color-primary);
     margin-top: 55px;
+}
+
+.pagination {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.pagination a {
+
+    color: var(--color-primary);
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+  
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
 }
