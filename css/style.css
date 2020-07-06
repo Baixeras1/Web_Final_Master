@@ -1,7 +1,8 @@
-*{margin: 0;padding: 0;border: none; box-sizing: border-box;}
+*{margin: 0;padding: 0;border: none; box-sizing: border-box;-webkit-appearance: none;}
 img{max-width: 100%;}
 a{text-decoration: none;}
 button{cursor: pointer;}
+
 :root {
     --color-primary: #111;
     --color-secondary: #FF0000;
@@ -62,6 +63,20 @@ h1 {
 h2 {
     font-family: titles;
     font-size: 2.1875em ;
+}
+h3 {
+    font-family: cabecera;
+    font-size: 4.625em;
+    margin-top: 30px;
+}
+h4 {
+    font-family: cabecera;
+    font-size: 2.275em;
+    color: var(--color-white);
+    margin-bottom: 50px;
+}
+h3,h4 {
+    margin-left: 265px;
 }
 
 p {
@@ -287,4 +302,84 @@ main {
   
 .pagination a:hover:not(.active) {
     background-color: #ddd;
+}
+
+.login {
+    background-color: var(--color-secondary);
+    width: 90%;
+    max-width: 100%;
+    height: 488px;
+    border-top-right-radius: 244px;
+    border-bottom-right-radius: 244px;
+    position: absolute;
+    top: 224px;
+    left: 0;
+}
+
+.login div > a {
+    color: var(--color-white);
+}
+
+input {
+    color: var(--color-white);
+    position: relative;
+    top: 0;
+    left: 318px;
+}
+
+input, .btn-inicio {
+    background-color: var(--color-primary);
+    display: block;
+    width: 377px;
+    height: 55px;
+    font-family: texto;
+    font-size: 1em;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-inicio {
+    background-color: var(--color-white);
+    font-family: subtitles;
+    font-size: 34px;
+    position: relative;
+    top: 40px;
+    left: 318px;
+}
+
+.btn-inicio a {
+    color: var(--color-primary);
+}
+input[type="checkbox"]{
+    width: initial;
+    display: none;
+}
+input[type="checkbox"] + label {
+    display: inline;
+    font-family: txt;
+    font-size: 1.2em;
+    position: relative;
+    padding-left: 30px;
+}
+input[type="checkbox"] + label::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid;
+    position: absolute;
+    top: -2px;
+    left: 0;
+}
+input[type="checkbox"] + label::after {
+    content: url(../img/check-solid.svg);
+    display: none;
+    position: absolute;
+    top: -6px;
+    left: 2px;
+    width: 30px;
+} 
+input[type="checkbox"]:checked + label::after {
+    display: block;
 }
